@@ -10,7 +10,7 @@
 
 اتصال خاص وآمن بضغطة واحدة، من دون حساب، ومن دون إعدادات معقدة.
 
-[**تنزيل أحدث إصدار**](https://github.com/inqadh/jissr-releases/releases) · [الموقع الرسمي](https://jissr.org)
+[**تنزيل أحدث إصدار لويندوز مباشرة**](https://github.com/inqadh/jissr-releases/releases/download/windows-latest/Jissr-Setup.msi) · [جميع الإصدارات](https://github.com/inqadh/jissr-releases/releases) · [الموقع الرسمي](https://jissr.org)
 
 </div>
 
@@ -22,7 +22,7 @@
 
 | النظام | الحالة | الرابط |
 |:---|:---:|:---:|
-| **Windows 10 وWindows 11** | متاح الآن | [صفحة التنزيل](https://github.com/inqadh/jissr-releases/releases) |
+| **Windows 10 وWindows 11** | متاح الآن | [تنزيل ملف التثبيت مباشرة](https://github.com/inqadh/jissr-releases/releases/download/windows-latest/Jissr-Setup.msi) |
 | **macOS** | قريبًا | — |
 | **Linux** | قريبًا | — |
 
@@ -30,10 +30,9 @@
 
 ## تثبيت جسر على Windows
 
-1. افتح [صفحة الإصدارات](https://github.com/inqadh/jissr-releases/releases).
-2. اختر أحدث إصدار لنظام Windows.
-3. نزّل الملف `Jissr-Setup.msi` وشغّله.
-4. بعد اكتمال التثبيت، ستجد جسر في قائمة ابدأ وبجوار الساعة.
+1. اضغط [تنزيل أحدث إصدار لويندوز](https://github.com/inqadh/jissr-releases/releases/download/windows-latest/Jissr-Setup.msi).
+2. شغّل الملف `Jissr-Setup.msi` بعد اكتمال التنزيل.
+3. بعد اكتمال التثبيت، ستجد جسر في قائمة ابدأ وبجوار الساعة.
 
 الإصدارات الحالية تجريبية وغير موقّعة رقميًا بعد، ولذلك قد يعرض Windows تنبيه **ناشر غير معروف**. نعمل على توفير توزيع موثوق وموقّع مع الإصدار المستقر.
 

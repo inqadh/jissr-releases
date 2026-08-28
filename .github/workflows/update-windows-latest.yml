@@ -1,0 +1,49 @@
+name: Update latest Windows download
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      source_tag:
+        description: Windows release tag to publish as the latest download
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    if: github.event_name == 'workflow_dispatch' || startsWith(github.event.release.tag_name, 'windows-v')
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      SOURCE_TAG: ${{ github.event_name == 'workflow_dispatch' && inputs.source_tag || github.event.release.tag_name }}
+    steps:
+      - name: Download Windows installer
+        run: |
+          mkdir latest-windows
+          gh release download "$SOURCE_TAG" \
+            --repo "$GITHUB_REPOSITORY" \
+            --dir latest-windows \
+            --pattern Jissr-Setup.msi \
+            --pattern Jissr-Setup.msi.sha256
+
+      - name: Refresh permanent download release
+        run: |
+          if gh release view windows-latest --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release upload windows-latest latest-windows/* \
+              --repo "$GITHUB_REPOSITORY" \
+              --clobber
+            gh release edit windows-latest \
+              --repo "$GITHUB_REPOSITORY" \
+              --title "أحدث إصدار من جسر لنظام Windows" \
+              --notes "رابط تنزيل دائم يشير إلى أحدث إصدار منشور من جسر لنظام Windows. الإصدار الحالي: $SOURCE_TAG"
+          else
+            gh release create windows-latest latest-windows/* \
+              --repo "$GITHUB_REPOSITORY" \
+              --title "أحدث إصدار من جسر لنظام Windows" \
+              --notes "رابط تنزيل دائم يشير إلى أحدث إصدار منشور من جسر لنظام Windows. الإصدار الحالي: $SOURCE_TAG" \
+              --prerelease
+          fi
