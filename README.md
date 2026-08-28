@@ -12,6 +12,14 @@
 
 [**تنزيل أحدث إصدار لويندوز مباشرة**](https://github.com/inqadh/jissr-releases/releases/download/windows-latest/Jissr-Setup.msi) · [جميع الإصدارات](https://github.com/inqadh/jissr-releases/releases) · [الموقع الرسمي](https://jissr.org)
 
+<br>
+
+<img src="./assets/jissr-windows-night.png" width="285" alt="واجهة جسر في الوضع الليلي عند عدم الاتصال">
+&nbsp;&nbsp;
+<img src="./assets/jissr-windows-day.png" width="285" alt="واجهة جسر في الوضع النهاري عند الاتصال">
+
+<p>واجهة واحدة بسيطة تتغيّر بوضوح بين عدم الاتصال والاتصال الآمن.</p>
+
 </div>
 
 ---
