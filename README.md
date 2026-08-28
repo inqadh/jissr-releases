@@ -14,9 +14,9 @@
 
 <br>
 
-<img src="./assets/jissr-windows-night.png" width="285" alt="واجهة جسر في الوضع الليلي عند عدم الاتصال">
+<img src="./assets/jissr-windows-night.png" width="300" alt="واجهة جسر في الوضع الليلي عند عدم الاتصال">
 &nbsp;&nbsp;
-<img src="./assets/jissr-windows-day.png" width="285" alt="واجهة جسر في الوضع النهاري عند الاتصال">
+<img src="./assets/jissr-windows-day.png" width="300" alt="واجهة جسر في الوضع النهاري عند الاتصال">
 
 <p>واجهة واحدة بسيطة تتغيّر بوضوح بين عدم الاتصال والاتصال الآمن.</p>
 
